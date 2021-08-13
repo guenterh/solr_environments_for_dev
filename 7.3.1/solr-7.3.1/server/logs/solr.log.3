@@ -1,0 +1,65 @@
+2021-08-11 20:58:37.714 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.8.v20171121, build timestamp: 2017-11-21T21:27:37Z, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2021-08-11 20:58:37.926 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.3.1
+2021-08-11 20:58:37.929 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 8090
+2021-08-11 20:58:37.929 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /usr/local/swissbib/solr/7.3.1/solr
+2021-08-11 20:58:37.935 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-08-11T20:58:37.930236Z
+2021-08-11 20:58:37.936 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2021-08-11 20:58:37.969 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /usr/local/swissbib/solr/7.3.1/solr/server/solr
+2021-08-11 20:58:38.017 INFO  (zkConnectionManagerCallback-2-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2021-08-11 20:58:38.025 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Loading solr.xml from SolrHome (not found in ZooKeeper)
+2021-08-11 20:58:38.027 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /usr/local/swissbib/solr/7.3.1/solr/server/solr/solr.xml
+2021-08-11 20:58:38.281 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:5555
+2021-08-11 20:58:38.293 INFO  (zkConnectionManagerCallback-6-thread-1-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2021-08-11 20:58:38.517 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=null) closing
+2021-08-11 20:58:38.521 INFO  (main) [   ] o.a.s.c.OverseerElectionContext I am going to be the leader 127.0.1.1:8090_solr
+2021-08-11 20:58:38.524 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=72058250871832577-127.0.1.1:8090_solr-n_0000000000) starting
+2021-08-11 20:58:38.557 INFO  (zkConnectionManagerCallback-11-thread-1-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2021-08-11 20:58:38.559 INFO  (main) [   ] o.a.s.c.s.i.ZkClientClusterStateProvider Cluster at localhost:5555 ready
+2021-08-11 20:58:38.588 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/127.0.1.1:8090_solr
+2021-08-11 20:58:38.598 INFO  (zkCallback-5-thread-1-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2021-08-11 20:58:38.598 INFO  (zkCallback-10-thread-1-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2021-08-11 20:58:38.743 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /usr/local/swissbib/solr/7.3.1/solr/server/solr
+2021-08-11 20:58:38.793 INFO  (main) [   ] o.e.j.s.Server Started @1489ms
+2021-08-11 20:58:42.134 INFO  (zkCallback-5-thread-1-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (2)
+2021-08-11 20:58:42.135 INFO  (zkCallback-10-thread-1-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (2)
+2021-08-11 20:58:46.990 INFO  (qtp1092572064-65) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2021-08-11 20:58:46.990 INFO  (qtp1092572064-65) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1628715526903} status=0 QTime=19
+2021-08-11 20:58:47.007 INFO  (qtp1092572064-66) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1628715526904} status=0 QTime=35
+2021-08-11 20:58:47.007 INFO  (qtp1092572064-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1628715526904} status=0 QTime=36
+2021-08-11 20:58:47.037 INFO  (qtp1092572064-29) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1628715526904 and sendToOCPQueue=true
+2021-08-11 20:58:47.037 INFO  (qtp1092572064-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1628715526904} status=0 QTime=0
+2021-08-11 20:58:49.501 INFO  (qtp1092572064-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1628715526903} status=0 QTime=0
+2021-08-11 20:58:49.505 INFO  (qtp1092572064-55) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={path=/live_nodes&wt=json&_=1628715529492} status=0 QTime=4
+2021-08-11 20:58:49.509 INFO  (qtp1092572064-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1628715526904} status=0 QTime=7
+2021-08-11 20:58:49.513 INFO  (qtp1092572064-66) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={path=/clusterstate.json&view=graph&detail=true&wt=json&_=1628715529492} status=0 QTime=3
+2021-08-11 20:58:49.513 INFO  (qtp1092572064-64) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1628715526904 and sendToOCPQueue=true
+2021-08-11 20:58:49.514 INFO  (qtp1092572064-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1628715526904} status=0 QTime=0
+2021-08-11 20:58:53.939 INFO  (qtp1092572064-55) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1628715526903} status=0 QTime=0
+2021-08-11 20:58:53.947 INFO  (qtp1092572064-65) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1628715526904} status=0 QTime=7
+2021-08-11 20:58:53.947 INFO  (qtp1092572064-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1628715526904} status=0 QTime=7
+2021-08-11 20:58:53.952 INFO  (qtp1092572064-64) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1628715526904 and sendToOCPQueue=true
+2021-08-11 20:58:53.952 INFO  (qtp1092572064-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1628715526904} status=0 QTime=0
+2021-08-11 20:58:55.388 INFO  (qtp1092572064-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1628715526903} status=0 QTime=0
+2021-08-11 20:58:55.390 INFO  (qtp1092572064-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1628715535385&since=0} status=0 QTime=0
+2021-08-11 20:58:55.396 INFO  (qtp1092572064-66) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1628715526904} status=0 QTime=7
+2021-08-11 20:58:55.408 INFO  (qtp1092572064-29) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1628715526904 and sendToOCPQueue=true
+2021-08-11 20:58:55.408 INFO  (qtp1092572064-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1628715526904} status=0 QTime=0
+2021-08-11 20:59:05.389 INFO  (qtp1092572064-66) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1628715535385&since=0} status=0 QTime=0
+2021-08-11 20:59:15.390 INFO  (qtp1092572064-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1628715535385&since=0} status=0 QTime=0
+2021-08-11 20:59:25.390 INFO  (qtp1092572064-66) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1628715535385&since=0} status=0 QTime=0
+2021-08-11 20:59:35.391 INFO  (qtp1092572064-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1628715535385&since=0} status=0 QTime=0
+2021-08-11 20:59:45.392 INFO  (qtp1092572064-66) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1628715535385&since=0} status=0 QTime=0
+2021-08-11 20:59:54.903 INFO  (zkCallback-5-thread-2-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (1)
+2021-08-11 20:59:54.903 INFO  (zkCallback-10-thread-2-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (1)
+2021-08-11 20:59:55.393 INFO  (qtp1092572064-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1628715535385&since=0} status=0 QTime=0
+2021-08-11 20:59:57.247 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1956415355
+2021-08-11 20:59:57.247 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2021-08-11 20:59:57.247 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2021-08-11 20:59:57.247 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2021-08-11 20:59:57.251 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/127.0.1.1:8090_solr
+2021-08-11 20:59:57.253 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.cluster, tag=null
+2021-08-11 20:59:57.253 INFO  (zkCallback-5-thread-2-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (0)
+2021-08-11 20:59:57.253 INFO  (zkCallback-10-thread-2-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (0)
+2021-08-11 20:59:57.255 INFO  (ShutdownMonitor) [   ] o.a.s.c.Overseer Overseer (id=72058250871832577-127.0.1.1:8090_solr-n_0000000000) closing
+2021-08-11 20:59:57.255 WARN  (OverseerAutoScalingTriggerThread-72058250871832577-127.0.1.1:8090_solr-n_0000000000) [   ] o.a.s.c.a.OverseerTriggerThread OverseerTriggerThread woken up but we are closed, exiting.
+2021-08-11 20:59:57.255 INFO  (OverseerStateUpdate-72058250871832577-127.0.1.1:8090_solr-n_0000000000) [   ] o.a.s.c.Overseer Overseer Loop exiting : 127.0.1.1:8090_solr

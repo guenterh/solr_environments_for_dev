@@ -1,0 +1,114 @@
+2021-08-11 21:02:54.976 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.8.v20171121, build timestamp: 2017-11-21T21:27:37Z, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2021-08-11 21:02:55.159 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.3.1
+2021-08-11 21:02:55.162 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 8090
+2021-08-11 21:02:55.162 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /usr/local/swissbib/solr/7.3.1/solr
+2021-08-11 21:02:55.169 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-08-11T21:02:55.163725Z
+2021-08-11 21:02:55.170 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2021-08-11 21:02:55.201 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /usr/local/swissbib/solr/7.3.1/solr/server/solr
+2021-08-11 21:02:55.248 INFO  (zkConnectionManagerCallback-2-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2021-08-11 21:02:55.257 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Loading solr.xml from SolrHome (not found in ZooKeeper)
+2021-08-11 21:02:55.258 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /usr/local/swissbib/solr/7.3.1/solr/server/solr/solr.xml
+2021-08-11 21:02:55.517 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:5555
+2021-08-11 21:02:55.531 INFO  (zkConnectionManagerCallback-6-thread-1-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2021-08-11 21:02:55.605 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=null) closing
+2021-08-11 21:02:55.610 INFO  (main) [   ] o.a.s.c.OverseerElectionContext I am going to be the leader 127.0.1.1:8090_solr
+2021-08-11 21:02:55.615 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=72058267736604673-127.0.1.1:8090_solr-n_0000000002) starting
+2021-08-11 21:02:55.648 INFO  (zkConnectionManagerCallback-11-thread-1-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2021-08-11 21:02:55.652 INFO  (main) [   ] o.a.s.c.s.i.ZkClientClusterStateProvider Cluster at localhost:5555 ready
+2021-08-11 21:02:55.675 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/127.0.1.1:8090_solr
+2021-08-11 21:02:55.686 INFO  (zkCallback-5-thread-1-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2021-08-11 21:02:55.686 INFO  (zkCallback-10-thread-1-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2021-08-11 21:02:55.711 INFO  (ScheduledTrigger-6-thread-1) [   ] o.a.s.c.a.SystemLogListener Collection .system does not exist, disabling logging.
+2021-08-11 21:02:55.753 WARN  (AutoscalingActionExecutor-7-thread-1-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.a.ScheduledTriggers Exception executing actions
+java.lang.Exception: Error executing action: auto_add_replicas_plan for trigger event: {
+  "id":"930ae0ec5c1Tdgm2iugo9tvdm8zle5esp3pim",
+  "source":".auto_add_replicas",
+  "eventTime":10104683283905,
+  "eventType":"NODELOST",
+  "properties":{
+    "eventTimes":[10104683283905],
+    "_enqueue_time_":10284730339956,
+    "nodeNames":["127.0.1.1:8091_solr"]}}
+	at org.apache.solr.cloud.autoscaling.ScheduledTriggers.lambda$null$3(ScheduledTriggers.java:307)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:188)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.solr.common.SolrException: Unexpected exception while processing event: {
+  "id":"930ae0ec5c1Tdgm2iugo9tvdm8zle5esp3pim",
+  "source":".auto_add_replicas",
+  "eventTime":10104683283905,
+  "eventType":"NODELOST",
+  "properties":{
+    "eventTimes":[10104683283905],
+    "_enqueue_time_":10284730339956,
+    "nodeNames":["127.0.1.1:8091_solr"]}}
+	at org.apache.solr.cloud.autoscaling.ComputePlanAction.process(ComputePlanAction.java:144)
+	at org.apache.solr.cloud.autoscaling.ScheduledTriggers.lambda$null$3(ScheduledTriggers.java:304)
+	... 6 more
+Caused by: org.apache.solr.common.SolrException: org.apache.solr.common.SolrException: 
+	at org.apache.solr.common.cloud.rule.ImplicitSnitch.getTags(ImplicitSnitch.java:78)
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider.getNodeValues(SolrClientNodeStateProvider.java:111)
+	at org.apache.solr.client.solrj.cloud.autoscaling.Row.<init>(Row.java:59)
+	at org.apache.solr.client.solrj.cloud.autoscaling.Policy$Session.<init>(Policy.java:271)
+	at org.apache.solr.client.solrj.cloud.autoscaling.Policy.createSession(Policy.java:376)
+	at org.apache.solr.client.solrj.cloud.autoscaling.PolicyHelper$SessionRef.createSession(PolicyHelper.java:360)
+	at org.apache.solr.client.solrj.cloud.autoscaling.PolicyHelper$SessionRef.get(PolicyHelper.java:325)
+	at org.apache.solr.client.solrj.cloud.autoscaling.PolicyHelper.getSession(PolicyHelper.java:381)
+	at org.apache.solr.cloud.autoscaling.ComputePlanAction.process(ComputePlanAction.java:76)
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: 
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider$AutoScalingSnitch.getRemoteInfo(SolrClientNodeStateProvider.java:250)
+	at org.apache.solr.common.cloud.rule.ImplicitSnitch.getTags(ImplicitSnitch.java:76)
+	... 15 more
+Caused by: org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://127.0.1.1:8090/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:650)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:255)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:244)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider$ClientSnitchCtx.invoke(SolrClientNodeStateProvider.java:292)
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider$AutoScalingSnitch.getRemoteInfo(SolrClientNodeStateProvider.java:227)
+	... 16 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.1.1:8090 [/127.0.1.1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:542)
+	... 21 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 31 more
+2021-08-11 21:02:55.855 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /usr/local/swissbib/solr/7.3.1/solr/server/solr
+2021-08-11 21:02:55.896 INFO  (main) [   ] o.e.j.s.Server Started @1329ms
+2021-08-11 21:02:59.468 INFO  (zkCallback-5-thread-1-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (2)
+2021-08-11 21:02:59.468 INFO  (zkCallback-10-thread-1-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (2)
+2021-08-11 21:08:32.862 INFO  (zkCallback-5-thread-2-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (1)
+2021-08-11 21:08:32.862 INFO  (zkCallback-10-thread-2-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (1)
+2021-08-11 21:08:35.245 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1956415355
+2021-08-11 21:08:35.245 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2021-08-11 21:08:35.245 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2021-08-11 21:08:35.245 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2021-08-11 21:08:35.250 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/127.0.1.1:8090_solr
+2021-08-11 21:08:35.251 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.cluster, tag=null
+2021-08-11 21:08:35.252 INFO  (zkCallback-5-thread-2-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (0)
+2021-08-11 21:08:35.252 INFO  (zkCallback-10-thread-2-processing-n:127.0.1.1:8090_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (0)
+2021-08-11 21:08:35.252 INFO  (ShutdownMonitor) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2021-08-11 21:08:35.254 INFO  (ShutdownMonitor) [   ] o.a.s.c.Overseer Overseer (id=72058267736604673-127.0.1.1:8090_solr-n_0000000002) closing
+2021-08-11 21:08:35.254 WARN  (OverseerAutoScalingTriggerThread-72058267736604673-127.0.1.1:8090_solr-n_0000000002) [   ] o.a.s.c.a.OverseerTriggerThread OverseerTriggerThread woken up but we are closed, exiting.
+2021-08-11 21:08:35.254 INFO  (OverseerStateUpdate-72058267736604673-127.0.1.1:8090_solr-n_0000000002) [   ] o.a.s.c.Overseer Overseer Loop exiting : 127.0.1.1:8090_solr

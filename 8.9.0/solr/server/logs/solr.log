@@ -1,0 +1,59 @@
+2021-08-13 11:10:16.215 INFO  (main) [   ] o.e.j.u.log Logging initialized @639ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-08-13 11:10:16.343 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.41.v20210516; built: 2021-05-16T23:56:28.993Z; git: 98607f93c7833e7dc59489b13f3cb0a114fb9f4c; jvm 11.0.11+9
+2021-08-13 11:10:16.356 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///usr/local/swissbib/solr/8.9.0/solr/server/contexts/] at interval 0
+2021-08-13 11:10:16.511 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-08-13 11:10:16.517 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-08-13 11:10:16.517 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-08-13 11:10:16.519 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-08-13 11:10:16.557 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-08-13 11:10:16.560 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.9.0
+2021-08-13 11:10:16.560 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 9091
+2021-08-13 11:10:16.560 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /usr/local/swissbib/solr/8.9.0/solr
+2021-08-13 11:10:16.560 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-08-13T11:10:16.560496Z
+2021-08-13 11:10:16.580 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /usr/local/swissbib/solr/8.9.0/solr/server/solr
+2021-08-13 11:10:16.619 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2021-08-13 11:10:16.638 INFO  (zkConnectionManagerCallback-2-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2021-08-13 11:10:16.638 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2021-08-13 11:10:16.745 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Loading solr.xml from SolrHome (not found in ZooKeeper)
+2021-08-13 11:10:16.746 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /usr/local/swissbib/solr/8.9.0/solr/server/solr/solr.xml
+2021-08-13 11:10:16.789 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@a4add54, but no JMX reporters were configured - adding default JMX reporter.
+2021-08-13 11:10:17.132 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-08-13 11:10:17.253 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@58ff8d79[provider=null,keyStore=null,trustStore=null]
+2021-08-13 11:10:17.254 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@58ff8d79[provider=null,keyStore=null,trustStore=null]
+2021-08-13 11:10:17.358 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@765ffb14[provider=null,keyStore=null,trustStore=null]
+2021-08-13 11:10:17.358 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@765ffb14[provider=null,keyStore=null,trustStore=null]
+2021-08-13 11:10:17.383 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:6666
+2021-08-13 11:10:17.393 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2021-08-13 11:10:17.396 INFO  (zkConnectionManagerCallback-13-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2021-08-13 11:10:17.396 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2021-08-13 11:10:17.415 WARN  (main) [   ] o.a.s.c.ZkController Contents of zookeeper /security.json are world-readable; consider setting up ACLs as described in https://solr.apache.org/guide/zookeeper-access-control.html
+2021-08-13 11:10:17.422 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2021-08-13 11:10:17.448 INFO  (main) [   ] o.a.s.c.ZkController Publish node=192.168.1.53:9091_solr as DOWN
+2021-08-13 11:10:17.455 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2021-08-13 11:10:17.455 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/192.168.1.53:9091_solr
+2021-08-13 11:10:17.465 INFO  (zkCallback-12-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (2)
+2021-08-13 11:10:17.487 INFO  (main) [   ] o.a.s.p.PackageLoader /packages.json updated to version -1
+2021-08-13 11:10:17.496 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-08-13 11:10:17.571 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-08-13 11:10:17.574 WARN  (main) [   ] o.a.s.D.o.a.s.h.a.MetricsCollectorHandler Solr loaded a deprecated plugin/analysis class [org.apache.solr.handler.admin.MetricsCollectorHandler]. Please consult documentation how to replace it accordingly.
+2021-08-13 11:10:17.621 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@a4add54
+2021-08-13 11:10:17.622 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@a4add54
+2021-08-13 11:10:17.625 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@a4add54
+2021-08-13 11:10:17.645 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /usr/local/swissbib/solr/8.9.0/solr/server/solr
+2021-08-13 11:10:17.689 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@1cfd1875{/solr,file:///usr/local/swissbib/solr/8.9.0/solr/server/solr-webapp/webapp/,AVAILABLE}{/usr/local/swissbib/solr/8.9.0/solr/server/solr-webapp/webapp}
+2021-08-13 11:10:17.696 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@71e5f61d{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:9091}
+2021-08-13 11:10:17.696 INFO  (main) [   ] o.e.j.s.Server Started @2122ms
+2021-08-13 11:10:25.562 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@71e5f61d{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:9091}
+2021-08-13 11:10:25.562 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2021-08-13 11:10:25.564 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=550707
+2021-08-13 11:10:25.564 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/192.168.1.53:9091_solr
+2021-08-13 11:10:25.568 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish this node as DOWN...
+2021-08-13 11:10:25.568 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish node=192.168.1.53:9091_solr as DOWN
+2021-08-13 11:10:25.574 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2021-08-13 11:10:25.575 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3f96f020: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@1eea5ee6
+2021-08-13 11:10:25.580 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2021-08-13 11:10:25.581 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@93824eb: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@540cfeb9
+2021-08-13 11:10:25.582 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2021-08-13 11:10:25.582 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@7af52ec7: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@e487e89
+2021-08-13 11:10:25.583 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.cluster tag=null
+2021-08-13 11:10:25.699 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@1cfd1875{/solr,null,STOPPED}{/usr/local/swissbib/solr/8.9.0/solr/server/solr-webapp/webapp}

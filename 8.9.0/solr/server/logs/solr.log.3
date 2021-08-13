@@ -1,0 +1,132 @@
+2021-08-13 10:09:39.455 INFO  (main) [   ] o.e.j.u.log Logging initialized @622ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-08-13 10:09:39.585 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.41.v20210516; built: 2021-05-16T23:56:28.993Z; git: 98607f93c7833e7dc59489b13f3cb0a114fb9f4c; jvm 11.0.11+9
+2021-08-13 10:09:39.598 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///usr/local/swissbib/solr/8.9.0/solr/server/contexts/] at interval 0
+2021-08-13 10:09:39.741 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-08-13 10:09:39.747 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-08-13 10:09:39.747 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-08-13 10:09:39.748 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2021-08-13 10:09:39.785 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-08-13 10:09:39.788 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.9.0
+2021-08-13 10:09:39.788 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 9090
+2021-08-13 10:09:39.788 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /usr/local/swissbib/solr/8.9.0/solr
+2021-08-13 10:09:39.788 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-08-13T10:09:39.788549Z
+2021-08-13 10:09:39.805 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /usr/local/swissbib/solr/8.9.0/solr/server/solr
+2021-08-13 10:09:39.845 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2021-08-13 10:09:39.868 INFO  (zkConnectionManagerCallback-2-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2021-08-13 10:09:39.868 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2021-08-13 10:09:39.980 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Loading solr.xml from SolrHome (not found in ZooKeeper)
+2021-08-13 10:09:39.980 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /usr/local/swissbib/solr/8.9.0/solr/server/solr/solr.xml
+2021-08-13 10:09:40.045 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@a4add54, but no JMX reporters were configured - adding default JMX reporter.
+2021-08-13 10:09:40.416 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-08-13 10:09:40.525 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@7e19755a[provider=null,keyStore=null,trustStore=null]
+2021-08-13 10:09:40.525 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@7e19755a[provider=null,keyStore=null,trustStore=null]
+2021-08-13 10:09:40.617 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@57562473[provider=null,keyStore=null,trustStore=null]
+2021-08-13 10:09:40.617 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@57562473[provider=null,keyStore=null,trustStore=null]
+2021-08-13 10:09:40.643 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:6666
+2021-08-13 10:09:40.654 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2021-08-13 10:09:40.658 INFO  (zkConnectionManagerCallback-13-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2021-08-13 10:09:40.658 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2021-08-13 10:09:40.686 WARN  (main) [   ] o.a.s.c.ZkController Contents of zookeeper /security.json are world-readable; consider setting up ACLs as described in https://solr.apache.org/guide/zookeeper-access-control.html
+2021-08-13 10:09:40.726 INFO  (main) [   ] o.a.s.c.OverseerElectionContext I am going to be the leader 192.168.1.53:9090_solr
+2021-08-13 10:09:40.730 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=72057658508181505-192.168.1.53:9090_solr-n_0000000002) starting
+2021-08-13 10:09:40.783 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/192.168.1.53:9090_solr
+2021-08-13 10:09:40.785 INFO  (OverseerStateUpdate-72057658508181505-192.168.1.53:9090_solr-n_0000000002) [   ] o.a.s.c.Overseer Starting to work on the main queue : 192.168.1.53:9090_solr
+2021-08-13 10:09:40.797 INFO  (zkCallback-12-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2021-08-13 10:09:40.809 INFO  (main) [   ] o.a.s.p.PackageLoader /packages.json updated to version -1
+2021-08-13 10:09:40.817 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-08-13 10:09:40.887 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-08-13 10:09:40.890 WARN  (main) [   ] o.a.s.D.o.a.s.h.a.MetricsCollectorHandler Solr loaded a deprecated plugin/analysis class [org.apache.solr.handler.admin.MetricsCollectorHandler]. Please consult documentation how to replace it accordingly.
+2021-08-13 10:09:40.935 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@a4add54
+2021-08-13 10:09:40.936 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@a4add54
+2021-08-13 10:09:40.938 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@a4add54
+2021-08-13 10:09:40.958 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /usr/local/swissbib/solr/8.9.0/solr/server/solr
+2021-08-13 10:09:40.999 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@1cfd1875{/solr,file:///usr/local/swissbib/solr/8.9.0/solr/server/solr-webapp/webapp/,AVAILABLE}{/usr/local/swissbib/solr/8.9.0/solr/server/solr-webapp/webapp}
+2021-08-13 10:09:41.006 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@71e5f61d{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:9090}
+2021-08-13 10:09:41.006 INFO  (main) [   ] o.e.j.s.Server Started @2174ms
+2021-08-13 10:09:45.522 INFO  (zkCallback-12-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (2)
+2021-08-13 10:09:50.714 INFO  (qtp553759818-64) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2021-08-13 10:09:50.715 INFO  (qtp553759818-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1628849390629} status=0 QTime=18
+2021-08-13 10:09:50.721 INFO  (qtp553759818-66) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1628849390629} status=0 QTime=24
+2021-08-13 10:09:50.728 INFO  (qtp553759818-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper/status params={wt=json&_=1628849390682} status=0 QTime=31
+2021-08-13 10:09:50.729 INFO  (qtp553759818-60) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:09:50.752 INFO  (qtp553759818-66) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1628849390629} status=0 QTime=1
+2021-08-13 10:10:00.255 INFO  (qtp553759818-60) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:00.258 INFO  (qtp553759818-63) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1628849390629} status=0 QTime=2
+2021-08-13 10:10:00.260 INFO  (qtp553759818-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1628849390629} status=0 QTime=4
+2021-08-13 10:10:00.266 INFO  (qtp553759818-66) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:00.297 INFO  (qtp553759818-30) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:00.312 INFO  (qtp553759818-31) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=javabin&version=2&_=1628849390629} status=0 QTime=5
+2021-08-13 10:10:00.411 INFO  (qtp553759818-58) [   ] o.a.s.h.a.AdminHandlersProxy Fetched response from 2 nodes: [192.168.1.53:9090_solr, 192.168.1.53:9091_solr]
+2021-08-13 10:10:00.411 INFO  (qtp553759818-29) [   ] o.a.s.h.a.AdminHandlersProxy Fetched response from 2 nodes: [192.168.1.53:9090_solr, 192.168.1.53:9091_solr]
+2021-08-13 10:10:00.411 INFO  (qtp553759818-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={nodes=192.168.1.53:9090_solr,192.168.1.53:9091_solr&wt=json&_=1628849390629} status=0 QTime=141
+2021-08-13 10:10:02.252 INFO  (qtp553759818-66) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:02.257 INFO  (qtp553759818-63) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1628849390629} status=0 QTime=4
+2021-08-13 10:10:02.258 INFO  (qtp553759818-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={path=/live_nodes&wt=json&_=1628849390682} status=0 QTime=4
+2021-08-13 10:10:02.262 INFO  (qtp553759818-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:02.266 INFO  (qtp553759818-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:02.267 INFO  (qtp553759818-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={path=/clusterstate.json&view=graph&detail=true&wt=json&_=1628849390682} status=0 QTime=3
+2021-08-13 10:10:05.227 INFO  (qtp553759818-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:05.229 INFO  (qtp553759818-66) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1628849390629} status=0 QTime=1
+2021-08-13 10:10:05.232 INFO  (qtp553759818-63) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1628849390629} status=0 QTime=3
+2021-08-13 10:10:05.244 INFO  (qtp553759818-30) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=javabin&version=2&_=1628849390629} status=0 QTime=4
+2021-08-13 10:10:05.246 INFO  (qtp553759818-58) [   ] o.a.s.h.a.AdminHandlersProxy Fetched response from 2 nodes: [192.168.1.53:9090_solr, 192.168.1.53:9091_solr]
+2021-08-13 10:10:05.248 INFO  (qtp553759818-64) [   ] o.a.s.h.a.AdminHandlersProxy Fetched response from 2 nodes: [192.168.1.53:9090_solr, 192.168.1.53:9091_solr]
+2021-08-13 10:10:05.248 INFO  (qtp553759818-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={nodes=192.168.1.53:9090_solr,192.168.1.53:9091_solr&wt=json&_=1628849390629} status=0 QTime=11
+2021-08-13 10:10:05.253 INFO  (qtp553759818-63) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:05.258 INFO  (qtp553759818-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:14.470 INFO  (qtp553759818-63) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:14.474 INFO  (qtp553759818-66) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1628849390629} status=0 QTime=3
+2021-08-13 10:10:14.479 INFO  (qtp553759818-60) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1628849390629} status=0 QTime=8
+2021-08-13 10:10:14.481 INFO  (qtp553759818-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:14.498 INFO  (qtp553759818-66) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:19.202 INFO  (qtp553759818-66) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:19.218 INFO  (qtp553759818-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1628849390629} status=0 QTime=15
+2021-08-13 10:10:19.222 INFO  (qtp553759818-66) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:19.223 INFO  (qtp553759818-65) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/threads params={wt=json&_=1628849419196} status=0 QTime=19
+2021-08-13 10:10:19.226 INFO  (qtp553759818-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:21.520 INFO  (qtp553759818-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:21.522 INFO  (qtp553759818-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1628849390629} status=0 QTime=1
+2021-08-13 10:10:21.524 INFO  (qtp553759818-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1628849390629} status=0 QTime=3
+2021-08-13 10:10:21.541 INFO  (qtp553759818-65) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={path=/configs/&detail=false&wt=json&_=1628849390682} status=0 QTime=17
+2021-08-13 10:10:21.545 INFO  (qtp553759818-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:21.547 INFO  (qtp553759818-63) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:21.551 INFO  (qtp553759818-65) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:23.631 INFO  (qtp553759818-63) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:23.633 INFO  (qtp553759818-65) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1628849390629} status=0 QTime=1
+2021-08-13 10:10:23.635 INFO  (qtp553759818-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1628849390629} status=0 QTime=3
+2021-08-13 10:10:23.639 INFO  (qtp553759818-63) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:23.647 INFO  (qtp553759818-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=javabin&version=2&_=1628849390629} status=0 QTime=4
+2021-08-13 10:10:23.650 INFO  (qtp553759818-64) [   ] o.a.s.h.a.AdminHandlersProxy Fetched response from 2 nodes: [192.168.1.53:9090_solr, 192.168.1.53:9091_solr]
+2021-08-13 10:10:23.653 INFO  (qtp553759818-29) [   ] o.a.s.h.a.AdminHandlersProxy Fetched response from 2 nodes: [192.168.1.53:9090_solr, 192.168.1.53:9091_solr]
+2021-08-13 10:10:23.653 INFO  (qtp553759818-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={nodes=192.168.1.53:9090_solr,192.168.1.53:9091_solr&wt=json&_=1628849390629} status=0 QTime=12
+2021-08-13 10:10:23.658 INFO  (qtp553759818-63) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:29.274 INFO  (qtp553759818-65) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:29.278 INFO  (qtp553759818-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1628849390629} status=0 QTime=3
+2021-08-13 10:10:29.285 INFO  (qtp553759818-65) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:29.289 INFO  (qtp553759818-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:29.303 INFO  (qtp553759818-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/cluster/autoscaling/suggestions params={} status=0 QTime=29
+2021-08-13 10:10:31.152 INFO  (qtp553759818-63) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:31.155 INFO  (qtp553759818-65) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1628849390629} status=0 QTime=3
+2021-08-13 10:10:31.155 INFO  (qtp553759818-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1628849390629} status=0 QTime=2
+2021-08-13 10:10:31.158 INFO  (qtp553759818-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:10:31.172 INFO  (qtp553759818-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1628849390629} status=0 QTime=0
+2021-08-13 10:36:22.714 INFO  (zkCallback-12-thread-2) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (1)
+2021-08-13 10:36:24.982 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@71e5f61d{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:9090}
+2021-08-13 10:36:24.982 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2021-08-13 10:36:24.985 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=550707
+2021-08-13 10:36:24.985 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/192.168.1.53:9090_solr
+2021-08-13 10:36:24.997 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish this node as DOWN...
+2021-08-13 10:36:24.997 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish node=192.168.1.53:9090_solr as DOWN
+2021-08-13 10:36:25.003 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2021-08-13 10:36:25.003 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4dac121d: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@182bc3b1
+2021-08-13 10:36:25.009 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2021-08-13 10:36:25.009 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@41fa769c: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@17a21d99
+2021-08-13 10:36:25.010 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2021-08-13 10:36:25.010 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@40113163: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@1fee5c90
+2021-08-13 10:36:25.011 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.cluster tag=null
+2021-08-13 10:36:25.012 INFO  (closeThreadPool-41-thread-1) [   ] o.a.s.c.Overseer Overseer (id=72057658508181505-192.168.1.53:9090_solr-n_0000000002) closing
+2021-08-13 10:36:25.012 INFO  (OverseerAutoScalingTriggerThread-72057658508181505-192.168.1.53:9090_solr-n_0000000002) [   ] o.a.s.c.a.OverseerTriggerThread OverseerTriggerThread woken up but we are closed, exiting.
+2021-08-13 10:36:25.012 INFO  (OverseerStateUpdate-72057658508181505-192.168.1.53:9090_solr-n_0000000002) [   ] o.a.s.c.Overseer Overseer Loop exiting : 192.168.1.53:9090_solr
+2021-08-13 10:36:25.013 INFO  (closeThreadPool-41-thread-2) [   ] o.a.s.c.Overseer Overseer (id=72057658508181505-192.168.1.53:9090_solr-n_0000000002) closing
+2021-08-13 10:36:25.116 INFO  (ShutdownMonitor) [   ] o.a.s.c.Overseer Overseer (id=72057658508181505-192.168.1.53:9090_solr-n_0000000002) closing
+2021-08-13 10:36:25.119 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@1cfd1875{/solr,null,STOPPED}{/usr/local/swissbib/solr/8.9.0/solr/server/solr-webapp/webapp}
